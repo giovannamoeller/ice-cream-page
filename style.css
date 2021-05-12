@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --background-color: #fdf6f2;
+    --primary-color: #fc9fa2;
+    --menu-color: #927d7d;
+    --secondary-color: #b69e99;
+    --circle1-color: #ffd3d5;
+    --circle2-color: #fce1ca;
+    --circle3-color: #ffeee2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    padding: 2rem 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+nav span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav .menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-left: 10rem;
+}
+
+nav .menu ul li {
+    list-style: none;
+}
+
+nav .menu ul a {
+    text-decoration: none;
+    color: var(--menu-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    padding: 5rem 10rem;
+    overflow: visible;
+}
+
+main section.text h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+main section.text span {
+    color: var(--secondary-color);
+    display: inline-block;
+    max-width: 380px;
+    line-height: 2rem;
+}
+
+main section .buttons button {
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 32px;
+    margin-top: 5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    background: white;
+    transition: all .3s ease-in-out;
+}
+
+main section .buttons button:hover {
+    transform: translateY(-15px);
+}
+
+main section .buttons button:first-child {
+    background-color: var(--primary-color);
+    color: white;
+    margin-right: 3rem;
+}
+
+main section.image img {
+    margin-top: 5rem;
+    width: 750px;
+    transition: all .3s ease-in-out;
+}
+
+main section.image img:hover {
+    transform: translateY(-35px);
+}
+
+.circle-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--circle1-color);
+    clip-path: circle(600px at 95% 100px);
+    z-index: -1;
+}
+
+.circle-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--circle2-color);
+    clip-path: circle(300px at center 900px);
+    z-index: -1;
+}
+
+.circle-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--circle3-color);
+    clip-path: circle(150px at 50px 300px);
+    z-index: -1;
+}
